@@ -1,5 +1,5 @@
 module.exports = {
   index: async (req, res) => {
-    return res.render('index', { title: 'Homepage | signin' });
+    return res.render('signin/index', { title: 'Homepage | signin' });
   },
 };

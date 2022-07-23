@@ -1,7 +1,56 @@
-<%- include('./includes/header'); %>
+<%- include('../includes/header.ejs'); %>
 
-<div class="container">
-  <h1><%= title %></h1>
-</div>
+<article>
+  <div class="container">
+    <h1 class="fw-bolder mb-1">Welcome to Article</h1>
+    <div class="text-muted fst-italic mb-2">Posted Juli 23, 2022</div>
 
-<%- include('./includes/footer'); %>
+    <figure class="mb-4 d-flex">
+      <img
+        src="https://perkim.id/wp-content/uploads/2020/06/sumbar-scaled.jpg"
+        alt="gambar"
+        class="img-fluid rounded"
+        width="500"
+        height="500"
+      />
+    </figure>
+
+    <section class="mb-5">
+      <p class="fs-5 mb-4">
+        Pesisir timur merupakan wilayah di dalam provinsi yang paling pesat
+        perkembangannya karena persyaratan infrastruktur yang relatif lebih
+        lengkap daripada wilayah lainnya. Wilayah pesisir timur juga merupakan
+        wilayah yang relatif padat konsentrasi penduduknya dibandingkan wilayah
+        lainnya. Pada masa kolonial Hindia Belanda, wilayah ini termasuk
+        residentie Sumatra's Oostkust bersama provinsi Riau.
+      </p>
+      <p class="fs-5 mb-4">
+        Di wilayah tengah provinsi berjajar Pegunungan Bukit Barisan. Di
+        pegunungan ini terdapat beberapa wilayah yang menjadi kantong-kantong
+        konsentrasi penduduk. Daerah di sekitar Danau Toba dan Pulau Samosir,
+        merupakan daerah padat penduduk yang menggantungkan hidupnya kepada
+        danau ini.
+      </p>
+      <p class="fs-5 mb-4">
+        Pesisir barat merupakan wilayah yang cukup sempit, dengan komposisi
+        penduduk yang terdiri dari masyarakat Batak, Minangkabau, dan Aceh.
+        Namun secara kultur dan etnolinguistik, wilayah ini masuk ke dalam
+        budaya dan Bahasa Minangkabau.
+      </p>
+
+      <h2 class="fw-bolder mb-4 mt-5">
+        Sebuah provinsi di Indonesia yang terletak di bagian Utara pulau Sumatra
+      </h2>
+      <p class="fs-5 mb-4">
+        Terdapat 419 pulau di propisi Sumatra Utara. Pulau-pulau terluar adalah
+        pulau Simuk (kepulauan Nias), dan pulau Berhala di selat Sumatra
+        (Malaka). Kepulauan Nias terdiri dari pulau Nias sebagai pulau utama dan
+        pulau-pulau kecil lain di sekitarnya. Kepulauan Nias terletak di lepas
+        pantai pesisir barat di Samudra Hindia. Pusat pemerintahan terletak di
+        Gunung Sitoli.
+      </p>
+    </section>
+  </div>
+</article>
+
+<%- include('../includes/footer'); %>
