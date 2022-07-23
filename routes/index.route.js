@@ -10,6 +10,8 @@ const router = require('express').Router();
 router.get('/', indexController.index);
 router.get('/articles', articlesController.index);
 router.get('/signin', signInController.index);
-router.get('/signup', signInController.index);
+router.get('/signup', signUpController.index);
+
+router.post('/signup/store', signUpController.store);
 
 module.exports = router;
