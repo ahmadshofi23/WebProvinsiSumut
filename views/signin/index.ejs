@@ -1,7 +1,39 @@
 <%- include('../includes/header.ejs'); %>
 
 <div class="container">
-  <h1><%= title %></h1>
+  <div class="container">
+    <% if (message)  { %>
+      <div class="alert <%- messageClass %>" role="alert">
+          <%- message %>
+      </div>
+    <% } %>
+    <form action="/signin/login" method="POST">
+      <div class="mb-3">
+        <label for="name" class="form-label">Username</label>
+        <input
+          type="text"
+          class="form-control"
+          id="name"
+          name="name"
+          placeholder="Input your name"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="password"
+          name="password"
+          placeholder="Input your password"
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="reset" class="btn btn-danger">Reset</button>
+    </form>
+  </div>
 </div>
 
 <%- include('../includes/footer'); %>

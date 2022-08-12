@@ -4,6 +4,7 @@ const bodyParser = require('body-parser');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const methodOverride = require('method-override');
+const flash = require('express-flash-notification');
 
 const config = require('./config');
 const routes = require('./routes/index.route');
@@ -25,9 +26,13 @@ app.use(
     cookie: { maxAge: 1000 * 60 * 60 * 24 },
   })
 );
+
+app.use(flash(app));
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 app.set('view engine', 'ejs');
+
 app.set('views', path.join(__dirname, 'views'));
 
 db.authenticate()

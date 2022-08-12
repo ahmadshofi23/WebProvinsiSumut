@@ -2,7 +2,7 @@ const User = require('../models/User');
 
 module.exports = {
   index: async (req, res) => {
-    return res.render('signup/index', { title: 'Create User' });
+    return res.render('signup/index', { title: 'Create User', cek: req.session.loggedin });
   },
 
   store: async (req, res) => {
@@ -16,6 +16,6 @@ module.exports = {
       password: req.body.password,
     });
 
-    return res.redirect('/signup');
+    return res.redirect('/signin');
   },
 };

@@ -36,6 +36,23 @@
           <li>
             <a href="/list-cities" class="nav-link px-2 link-secondary">Cities</a>
           </li>
+          <li>
+            <a href="/rumah-adat" class="nav-link px-2 link-secondary">Rumah Adat</a>
+          </li>
+          <li>
+            <a href="/list-photos" class="nav-link px-2 link-secondary">List Photos</a>
+          </li>
+          <li>
+            <a href="/list-culture" class="nav-link px-2 link-secondary">List Culture</a>
+          </li>
+          <li>
+            <a href="/list-favorite" class="nav-link px-2 link-secondary">List Favorite</a>
+          </li>
+          <% if(cek != undefined) { %>
+            <li>
+              <a href="/my-favorite" class="nav-link px-2 link-secondary">My Favorite</a>
+            </li>  
+          <% } %>  
           <li><a href="/signin" class="nav-link px-2 link-dark">Signin</a></li>
           <li>
             <a href="/signup" class="nav-link px-2 link-dark">Signup</a>
@@ -43,5 +60,6 @@
         </ul>
       </header>
     </div>
+    
   </body>
 </html>
